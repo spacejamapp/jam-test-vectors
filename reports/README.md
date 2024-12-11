@@ -52,9 +52,6 @@ subsystem.
   - Context state root doesn't match the one at anchor.
 - [bad_validator_index](./tiny/bad_validator_index-1.json) 🔴
   - Validator index is too big.
-- [consume_authorization_once](./tiny/consume_authorization_once-1.json) 🔴
-  - Multiple authorizers are available for the same work report.
-  - Only one is consumed. 
 - [core_engaged](./tiny/core_engaged-1.json) 🔴
   - A core is not available.
 - [dependency_missing](./tiny/dependency_missing-1.json) 🔴
@@ -111,6 +108,10 @@ subsystem.
     an unexpected value.
 - [wrong_assignment](./tiny/wrong_assignment-1.json) 🔴
   - Unexpected guarantor for work report core.
+- [big_work_report_output](./tiny/big_work_report_output-1.json) 🟢
+  - Work report output is very big, still less than the limit.
+- [too_big_work_report_output](./tiny/big_work_report_output-1.json) 🔴
+  - Work report output is size is over the limit.
 
 ## Full Vectors
 
