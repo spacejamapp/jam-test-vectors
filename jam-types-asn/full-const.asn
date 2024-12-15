@@ -1,4 +1,4 @@
--- Tiny Constants
+-- Full Constants
 
 Constants DEFINITIONS ::= BEGIN
 
@@ -9,8 +9,12 @@ cores-count INTEGER ::= 341
 epoch-length INTEGER ::= 600
 
 max-tickets-per-block INTEGER ::= 16
+tickets-per-validator INTEGER ::= 2
 
 max-blocks-history INTEGER ::= 8
+
+auth-pool-max-size INTEGER ::= 8
+auth-queue-size INTEGER ::= 80
 
 -- Derived constants
 
