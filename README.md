@@ -1,6 +1,4 @@
-# Test Vectors for the JAM Protocol
-
-JAM protocol version 0.6.4
+# Test Vectors for the JAM Protocol (v0.6.5)
 
 ## Codec
  
@@ -23,6 +21,8 @@ We offer two types of test vectors:
   - epoch period: 600
   - core assignment rotation period: 10
   - ticket attempts: 2
+
+For more information refer to the community [docs](https://docs.jamcha.in/basics/chain-spec).
 
 ### STF Output
 
