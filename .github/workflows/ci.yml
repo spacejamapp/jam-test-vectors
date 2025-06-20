@@ -18,6 +18,7 @@ jobs:
         validator:
           - codec
           - erasure-coding
+          - traces
           - stf/accumulate
           - stf/assurances
           - stf/authorizations
@@ -33,10 +34,9 @@ jobs:
       - name: Set up Python
         uses: actions/setup-python@v4
         with:
-          python-version: '3.8'
+          python-version: "3.8"
       - name: Install dependencies
         run: |
           pip install git+https://github.com/davxy/asn1tools.git
       - name: Validate ${{ matrix.validator }}
         run: ./${{ matrix.validator }}/validate.py
-
