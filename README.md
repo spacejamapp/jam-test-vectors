@@ -6,7 +6,7 @@
 
 ## Erasure Coding
 
-- [Erasure Coding](./erasure-coding/README.md)
+- [Erasure Coding](./erasure/README.md)
 
 ## State Transition Functions
 
