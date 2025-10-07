@@ -135,6 +135,8 @@ ServiceId ::= U32
 
 -- Information about a deployed service
 ServiceInfo ::= SEQUENCE {
+    -- Service information version
+    version        U8,
     -- Hash of the service's code
     code-hash      OpaqueHash,
     -- Current balance of the service
@@ -475,12 +477,12 @@ CoreActivityRecord ::= SEQUENCE {
     popularity      U16,
     -- Number of segments imported from DA for block processing
     imports         U16,
-    -- Number of segments exported to DA during block processing
-    exports         U16,
-    -- Total size of extrinsics for reported work.
-    extrinsic-size  U32,
     -- Total number of extrinsics for reported work.
     extrinsic-count U16,
+    -- Total size of extrinsics for reported work.
+    extrinsic-size  U32,
+    -- Number of segments exported to DA during block processing
+    exports         U16,
     -- Serialized work bundle size written to DA.
     bundle-size     U32,
     -- Total gas consumed during block processing (includes refinements and authorizations).
@@ -502,20 +504,16 @@ ServiceActivityRecord ::= SEQUENCE {
     refinement-gas-used   Gas,
     -- Number of segments imported from the DL
     imports               U32,
-    -- Number of segments exported into the DL
-    exports               U32,
-    -- Total size of extrinsics used
-    extrinsic-size        U32,
     -- Total number of extrinsics used
     extrinsic-count       U32,
+    -- Total size of extrinsics used
+    extrinsic-size        U32,
+    -- Number of segments exported into the DL
+    exports               U32,
     -- Number of work-items accumulated
     accumulate-count      U32,
     -- Amount of gas used for accumulation
-    accumulate-gas-used   Gas,
-    -- Number of processed transfers
-    on-transfers-count    U32,
-    -- Amount of gas used for processing transfers
-    on-transfers-gas-used Gas
+    accumulate-gas-used   Gas
 }
 
 -- Map entry for service statistics
@@ -763,6 +761,8 @@ Privileges ::= SEQUENCE {
     assign SEQUENCE (SIZE(core-count)) OF ServiceId,
     -- Service ID with designation privileges
     designate ServiceId,
+    -- Service ID with registrar privileges
+    register ServiceId,
     -- Services that are always accumulated
     always-acc SEQUENCE OF AlwaysAccumulateMapEntry
 }

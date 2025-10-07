@@ -305,6 +305,7 @@
                 "id": 42,
                 "data": {
                     "service": {
+                        "version": 0,
                         "code_hash": "0x6470fd21983eae8d706f1edd5e2dc5afe095980f8fb7bd4ebfd33550d8730246",
                         "balance": 20219,
                         "min_item_gas": 10,
@@ -324,9 +325,9 @@
                 "da_load": 0,
                 "popularity": 0,
                 "imports": 0,
-                "exports": 0,
-                "extrinsic_size": 0,
                 "extrinsic_count": 0,
+                "extrinsic_size": 0,
+                "exports": 0,
                 "bundle_size": 0,
                 "gas_used": 0
             },
@@ -334,9 +335,9 @@
                 "da_load": 0,
                 "popularity": 0,
                 "imports": 0,
-                "exports": 0,
-                "extrinsic_size": 0,
                 "extrinsic_count": 0,
+                "extrinsic_size": 0,
+                "exports": 0,
                 "bundle_size": 0,
                 "gas_used": 0
             }
@@ -631,6 +632,7 @@
                 "id": 42,
                 "data": {
                     "service": {
+                        "version": 0,
                         "code_hash": "0x6470fd21983eae8d706f1edd5e2dc5afe095980f8fb7bd4ebfd33550d8730246",
                         "balance": 20219,
                         "min_item_gas": 10,
@@ -650,9 +652,9 @@
                 "da_load": 0,
                 "popularity": 0,
                 "imports": 8,
-                "exports": 17,
-                "extrinsic_size": 1526,
                 "extrinsic_count": 8,
+                "extrinsic_size": 1526,
+                "exports": 17,
                 "bundle_size": 17180,
                 "gas_used": 821
             },
@@ -660,9 +662,9 @@
                 "da_load": 0,
                 "popularity": 0,
                 "imports": 1,
-                "exports": 18,
-                "extrinsic_size": 1926,
                 "extrinsic_count": 3,
+                "extrinsic_size": 1926,
+                "exports": 18,
                 "bundle_size": 12487,
                 "gas_used": 697
             }
@@ -676,13 +678,11 @@
                     "refinement_count": 2,
                     "refinement_gas_used": 1518,
                     "imports": 9,
-                    "exports": 35,
-                    "extrinsic_size": 3452,
                     "extrinsic_count": 11,
+                    "extrinsic_size": 3452,
+                    "exports": 35,
                     "accumulate_count": 0,
-                    "accumulate_gas_used": 0,
-                    "on_transfers_count": 0,
-                    "on_transfers_gas_used": 0
+                    "accumulate_gas_used": 0
                 }
             }
         ]
