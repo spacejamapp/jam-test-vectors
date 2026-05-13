@@ -1,4 +1,4 @@
-# Test Vectors for the JAM Protocol (0.7.1)
+# Test Vectors for the JAM Protocol
 
 ## Classes
 
